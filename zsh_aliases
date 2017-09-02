@@ -1,0 +1,35 @@
+alias gs='git status'
+alias staged='git diff --staged'
+
+alias ga='function _gitadd() { git add "$1"; git status; }; _gitadd'
+alias gaa='git add -A ; git status'
+alias gr='function _gitreset() { git reset "$1" -q; git status; }; _gitreset'
+alias gra='function _gitreset() { git reset . -q; git status; }; _gitreset'
+
+alias gdf='git difftool -y'
+alias gd='git diff'
+
+alias ch='git checkout'
+alias br='function _gitcheckout() { git checkout -b "$1" -q; git status; }; _gitcheckout'
+
+alias gc='git commit -m'
+alias commit='git commit'
+alias uncommit='git reset --soft $(git log --format=%H -2 | tail -1)'
+
+alias push='git push'
+alias pull='git pull'
+
+alias branch='git branch'
+
+alias gl='git log'
+alias lastcommit='git show -1'
+
+alias nah='git reset --hard; git clean -df;'
+
+alias t='phpunit'
+alias ts='phpunit --stop-on-error --stop-on-failure'
+
+alias tinker='php artisan tinker'
+
+alias freshvendor='rm -rf vendor; composer install'
+alias freshnode='rm -rf node_modules; node install'
