@@ -20,7 +20,7 @@ function get_pwd(){
   echo $prompt_short_dir
 }
 
-PROMPT='$ret_status %{$fg[white]%}$(get_pwd) $(git_prompt_info)%{$reset_color%}%{$reset_color%} '
+PROMPT='$ret_status %{$fg[white]%}$(get_pwd)$(git_prompt_info)%{$reset_color%}%{$reset_color%} '
 
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%}$(current_branch)%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}$(current_branch)%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[yellow]%}$(current_branch)%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg[green]%}$(current_branch)%{$reset_color%}"
