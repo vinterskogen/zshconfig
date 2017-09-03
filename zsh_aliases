@@ -29,6 +29,7 @@ alias nah='git reset --hard; git clean -df;'
 alias t='phpunit'
 alias ts='phpunit --stop-on-error --stop-on-failure'
 
+alias artisan='php artisan'
 alias tinker='php artisan tinker'
 
 alias freshvendor='rm -rf vendor; composer install'
