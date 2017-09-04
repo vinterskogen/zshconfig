@@ -2,7 +2,7 @@
 
 ## Installation
 
-1. Make sure you are using ZSH shell.
+1. Make sure you are using zsh shell.
 3. Clone confing repo: `git clone https://github.com/vinterskogen/zshconfig.git ~/zshconfig` 
 3. Run confing installer: `. ~/zshconfig/install.sh`
 4. Done!
@@ -11,6 +11,7 @@
 
 This configuration set contains:
 
+- Oh My Zsh - framework for managing your zsh configuration
 - A nice-looking theme "homelike" (based on [gitster](https://github.com/shashankmehta/dotfiles/blob/master/thesetup/zsh/.oh-my-zsh/custom/themes/gitster.zsh-theme) theme)
 - A set of usefull aliases to speed up work with git and Laravel
 
