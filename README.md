@@ -1,5 +1,9 @@
 # A configuration set for Oh My Zsh
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/8015372/30034219-8f9430f6-91a8-11e7-9b86-e91f0dfb4075.png" alt="zsh" />
+</p>
+
 ## Installation
 
 1. Make sure you are using zsh shell.
