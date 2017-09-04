@@ -1,4 +1,4 @@
-# ZSH config
+# A configuration set for Oh My Zsh
 
 ## Installation
 
@@ -11,9 +11,10 @@
 
 This configuration set contains:
 
-- Oh My Zsh - framework for managing your zsh configuration
 - A nice-looking theme "homelike" (based on [gitster](https://github.com/shashankmehta/dotfiles/blob/master/thesetup/zsh/.oh-my-zsh/custom/themes/gitster.zsh-theme) theme)
-- A set of usefull aliases to speed up work with git and Laravel
+- A set of usefull aliases to speed up work with git, Laravel and more
+- [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - а framework for managing zsh configuration
+
 
 ## Gallery
 
