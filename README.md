@@ -20,7 +20,7 @@ It is an attempt to make for myself a simple, speedy and convenient to use confi
 This configuration set contains:
 
 - A nice-looking theme "homelike" (based on [gitster](https://github.com/shashankmehta/dotfiles/blob/master/thesetup/zsh/.oh-my-zsh/custom/themes/gitster.zsh-theme) theme)
-- A set of glance aliases to speed up work with git, Laravel and more
+- A set of useful aliases to speed up work with git, Laravel and more
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - а framework for managing zsh configuration
 
 
