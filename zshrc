@@ -2,7 +2,7 @@
 export PATH=$PATH:./vendor/bin/:$HOME/.composer/vendor/bin
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/vinter/.oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
 
 # Path to your configuration.
 export ZSH_CONFIG="$HOME/zshconfig"
