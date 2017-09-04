@@ -4,6 +4,10 @@
   <img src="https://user-images.githubusercontent.com/8015372/30034684-a5277592-91ab-11e7-87c5-be3807df73ea.png" alt="A configuration set for Oh My Zsh" />
 </p>
 
+## What it for?
+
+It is an attempt to make for myself a simple, speedy and convenient to use configuration set for Oh My Zsh.
+
 ## Installation
 
 1. Make sure you are using zsh shell.
