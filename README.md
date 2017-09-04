@@ -7,16 +7,23 @@
 3. Run confing installer: `. ~/zshconfig/install.sh`
 4. Done!
 
+## Description
+
+This configuration set contains:
+
+- A nice-looking theme "homelike" (based on [gitster](https://github.com/shashankmehta/dotfiles/blob/master/thesetup/zsh/.oh-my-zsh/custom/themes/gitster.zsh-theme) theme)
+- A set of usefull aliases to speed up work with git and Laravel
+
 ## Gallery
 
-*home* 
+*At home:* 
 
 ![home](https://user-images.githubusercontent.com/8015372/30007368-b3b16500-9115-11e7-91eb-123802c1e97a.png)
 
-*git*
+*Displaying git status:*
 
 ![git](https://user-images.githubusercontent.com/8015372/30007366-b376c832-9115-11e7-9f87-ced1bebd47d9.png)
 
-*Laravel*
+*Starting new Laravel project:*
 
 ![laravel](https://user-images.githubusercontent.com/8015372/30007367-b39f267e-9115-11e7-81be-b4aa8473c5de.png)
