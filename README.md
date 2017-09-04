@@ -1,4 +1,4 @@
-# A configuration set for Oh My Zsh
+# zshconfig
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/8015372/30034684-a5277592-91ab-11e7-87c5-be3807df73ea.png" alt="A configuration set for Oh My Zsh" />
