@@ -6,7 +6,7 @@
 
 ## What it for?
 
-It is an attempt to make for myself a simple, speedy and convenient to use configuration set for Oh My Zsh.
+It is an attempt to make a simple, speedy and convenient to use configuration set for Oh My Zsh.
 
 ## Installation
 
