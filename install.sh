@@ -22,12 +22,15 @@ else
   NORMAL=""
 fi
 
-echo "Installing Oh My Zsh with configuration... \n"
+echo "Installing Oh My Zsh with configuration..."
+echo "Learn more - https://github.com/vinterskogen/zshconfig"
+echo
 
 # Test current shell
 TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
 if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
-  echo "${RED}Make sure you are using ZSH shell!${NORMAL}\n"
+  echo "${RED}Make sure you are using ZSH shell!${NORMAL}"
+  echo
 fi;
 
 # ZSH configuration directory
@@ -55,7 +58,8 @@ if [ ! -e $OH_MY_ZSH_DIR ]; then
 else
   echo "${BOLD}found.${NORMAL}"
   echo "  ${YELLOW}Notice: Oh My Zsh is already installed.${NORMAL}"
-  echo "  ${YELLOW}(You'll need to remove $OH_MY_ZSH_DIR if you want to re-install it.)${NORMAL}\n"
+  echo "  ${YELLOW}(You'll need to remove $OH_MY_ZSH_DIR if you want to re-install it.)${NORMAL}"
+  echo
 fi
 
 # Moving old ZSH configuration files
@@ -74,7 +78,6 @@ echo "${GREEN}done!${NORMAL}"
 
 echo
 echo "  All done."
-echo "  Learn more - https://github.com/vinterskogen/zshconfig\n"
-
-echo "  Enjoy using it! ;)\n"
+echo "  Enjoy using it! ;)"
+echo
 
