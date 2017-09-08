@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export ZSH_CONFIG="$HOME/zshconfig"
 
 # Set name of the theme to load. 
-ZSH_THEME="homelike"
+export ZSH_THEME="homelike"
 
 # Would you like to use another custom folder than $ZSH/custom?
 export ZSH_CUSTOM="$ZSH_CONFIG/custom"
@@ -17,16 +17,23 @@ export ZSH_CUSTOM="$ZSH_CONFIG/custom"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git laravel5)
+plugins=(git composer laravel5 vim-interaction zsh_reload)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# Aliases
+# Aliases.
 alias zshconfig="vim ~/zshconfig/zshrc"
 alias zshaliases="vim ~/zshconfig/zsh_aliases"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
-# Load aliases
-source $ZSH_CONFIG/zsh_aliases
+# Commom aliases.
+if [ -f $HOME/.zsh_aliases ]; then
+    source $HOME/.zsh_aliases
+fi
+
+# Custom aliases (for example any workplace-specific aliases).
+if [ -f $HOME/.zsh_custom_aliases ]; then
+    source $HOME/.zsh_custom_aliases
+fi
