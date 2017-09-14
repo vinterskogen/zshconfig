@@ -34,3 +34,7 @@ alias tinker='php artisan tinker'
 
 alias freshvendor='rm -rf vendor; composer install'
 alias freshnode='rm -rf node_modules; node install'
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
