@@ -1,7 +1,7 @@
 # zshconfig
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/8015372/30034684-a5277592-91ab-11e7-87c5-be3807df73ea.png" alt="A configuration set for Oh My Zsh" />
+  <a href="https://github.com/vinterskogen/zshconfig" target="_blank"><img src="https://user-images.githubusercontent.com/8015372/30034684-a5277592-91ab-11e7-87c5-be3807df73ea.png" alt="A configuration set for Oh My Zsh" /></a>
 </p>
 
 ## What is it for?
