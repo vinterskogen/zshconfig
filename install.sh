@@ -22,8 +22,7 @@ else
   NORMAL=""
 fi
 
-echo "Installing Oh My Zsh with configuration..."
-echo "Learn more - https://github.com/vinterskogen/zshconfig"
+echo "Installing Oh My Zsh and configuration."
 echo
 
 # Test current shell
@@ -47,11 +46,11 @@ cd $HOME
 
 OH_MY_ZSH_DIR="$HOME/.oh-my-zsh"
 
-echo -n "- Cheching for existing installation... "
+echo -n "- Checking for existing installation... "
 
 # Download Oh My Zsh
 if [ ! -e $OH_MY_ZSH_DIR ]; then
-  echo "${BLUE}not found.${NORMAL}"
+  echo "${BLUE}missing.${NORMAL}"
   echo -n "- Downloading Oh My Zsh... "
   git clone --depth=1 --quiet https://github.com/robbyrussell/oh-my-zsh.git "$OH_MY_ZSH_DIR"
   if [ ! $? -eq 0 ] ; then
@@ -61,8 +60,6 @@ if [ ! -e $OH_MY_ZSH_DIR ]; then
   echo "${GREEN}done!${NORMAL}"
 else
   echo "${BLUE}found.${NORMAL}"
-  echo "  ${YELLOW}Notice: Oh My Zsh is already installed.${NORMAL}"
-  echo "  ${YELLOW}(You'll need to remove $OH_MY_ZSH_DIR if you want to re-install it.)${NORMAL}"
 fi
 
 # Moving old ZSH configuration files
@@ -80,7 +77,6 @@ ln -s "$ZSH_CONFIG_DIR/zsh_aliases" "$HOME/.zsh_aliases"
 echo "${GREEN}done!${NORMAL}"
 
 echo
-echo "  All done."
-echo "  Enjoy using it! ;)"
+echo "  All done. Enjoy using it! ;)"
 echo
-
+echo "Learn more - https://github.com/vinterskogen/zshconfig"
