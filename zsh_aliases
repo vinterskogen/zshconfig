@@ -1,5 +1,5 @@
 alias gs='git status'
-alias staged='git diff --staged'
+alias st='git diff --staged'
 
 alias ga='function _gitadd() { git add "$1"; git status; }; _gitadd'
 alias gaa='git add -A ; git status'
@@ -9,8 +9,11 @@ alias gra='function _gitreset() { git reset . -q; git status; }; _gitreset'
 alias gdf='git difftool -y'
 alias gd='git diff'
 
-alias ch='git checkout'
-alias br='function _gitcheckout() { git checkout -b "$1" -q; git status; }; _gitcheckout'
+alias ch='checkout'
+alias checkout='git checkout'
+
+alias br='newbranch'
+alias newbranch='function _gitcheckout() { git checkout -b "$1" -q; git status; }; _gitcheckout'
 
 alias gc='git commit -m'
 alias commit='git commit'
