@@ -1,7 +1,6 @@
 #!/bin/sh
 
-# Use colors, but only if connected to a terminal, and that terminal
-# supports them.
+# Use colors, but only if connected to a terminal, and that terminal supports them.
 if which tput >/dev/null 2>&1; then
   ncolors=$(tput colors)
 fi
@@ -22,8 +21,22 @@ else
   NORMAL=""
 fi
 
-echo "Installing Oh My Zsh and configuration."
+# Asking for user's confirmation
+echo " ${YELLOW}Oh My Zsh and additional configuration installer${NORMAL} "
 echo
+echo " This will pull the latest version of Oh My Zsh as well as an additional"
+echo " configuration set to tune your zsh to be a perfect shell."
+echo
+echo " More - ${BLUE}https://github.com/vinterskogen/zshconfig${NORMAL}"
+echo
+echo -n "${GREEN} Do you wish to continue? (yes/no) [no]${NORMAL}: "
+read answer
+
+if ! echo "$answer" | grep -iq "^y" ; then
+    exit 1
+else
+    echo
+fi
 
 # Test current shell
 TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
@@ -46,12 +59,12 @@ cd $HOME
 
 OH_MY_ZSH_DIR="$HOME/.oh-my-zsh"
 
-echo -n "- Checking for existing installation... "
+echo -n " - Checking for existing installation... "
 
 # Download Oh My Zsh
 if [ ! -e $OH_MY_ZSH_DIR ]; then
   echo "${BLUE}missing.${NORMAL}"
-  echo -n "- Downloading Oh My Zsh... "
+  echo -n " - Pulling Oh My Zsh from GitHub... "
   git clone --depth=1 --quiet https://github.com/robbyrussell/oh-my-zsh.git "$OH_MY_ZSH_DIR"
   if [ ! $? -eq 0 ] ; then
     echo "${RED}failed!${NORMAL}"
@@ -59,10 +72,10 @@ if [ ! -e $OH_MY_ZSH_DIR ]; then
   fi
   echo "${GREEN}done!${NORMAL}"
 else
-  echo "${BLUE}found.${NORMAL}"
+  echo "${BLUE}found!${NORMAL}"
 fi
 
-# Moving old ZSH configuration files
+# Backup old ZSH configuration files
 if [ -e $HOME/.zshrc ]; then
   mv "$HOME/.zshrc" "$HOME/.zshrc.old"
 fi
@@ -71,12 +84,12 @@ if [ -e $HOME/.zsh_aliases ]; then
 fi
 
 # Linking ZSH configuration files
-echo -n "- Setting up configuration... "
+echo -n " - Setting up additional configuration... "
 ln -s "$ZSH_CONFIG_DIR/zshrc" "$HOME/.zshrc"
 ln -s "$ZSH_CONFIG_DIR/zsh_aliases" "$HOME/.zsh_aliases"
 echo "${GREEN}done!${NORMAL}"
 
 echo
-echo "  All done. Enjoy using it! ;)"
+echo " ${GREEN}Installed.${NORMAL}"
+echo " Enjoy using it! ;)"
 echo
-echo "Learn more - https://github.com/vinterskogen/zshconfig"
